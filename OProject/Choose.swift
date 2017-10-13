@@ -14,32 +14,31 @@ class Choose: UIViewController, UITextFieldDelegate {
     @IBOutlet var phoneTextField: UITextField!
     @IBOutlet var addressTextField: UITextField!
     @IBOutlet var payment: UISegmentedControl!
-    @IBOutlet var lastestButton: UIButton! // 디자인지정 위해 생성
-    @IBOutlet var yesButton: UIButton! // 디자인지정 위해 생성
-
-    //--- 정보 다시 받아오기
-    var reName: String!
-    var rePhone: String!
-    var reAddress: String!
-    var rePaySegIndex: Int = 0
+    @IBOutlet var lastestButton: UIButton!
+    @IBOutlet var yesButton: UIButton!
     
+    //-- Address Store에서 주소정보 가져오기
+    var chooseAddress: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lastestButton.layer.cornerRadius = 10 // 버튼 모서리 둥글게
+        
+        //--- 버튼 모서리 둥글게 지정
+        lastestButton.layer.cornerRadius = 10
         yesButton.layer.cornerRadius = 10
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
-        //--- Address Store에서 받아온 정보를 출력
-        nameTextField.text = reName
-        phoneTextField.text = rePhone
-        addressTextField.text = reAddress
-        payment.selectedSegmentIndex = rePaySegIndex
+        super.viewWillAppear(animated)
+        
+        //-- Address Store에서 받아온 주소 출력
+        if chooseAddress != nil {
+            addressTextField.text = chooseAddress
+            chooseAddress = nil
+        }
     }
-    
-    //---- 키보드 없애기
+
+    //---- 키보드 사라지게 하기
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -51,12 +50,7 @@ class Choose: UIViewController, UITextFieldDelegate {
         if segue.identifier == "AddressStore"{
             let destVC = segue.destination as! AddressStore
             destVC.title = "주소 찾기"
-  
-            //--- 정보넘기기
-            destVC.Name = nameTextField.text
-            destVC.Phone = phoneTextField.text
-            destVC.Address = addressTextField.text
-            destVC.PaySegIndex = payment.selectedSegmentIndex
+            destVC.chooseVC = self
         }
         
         else{

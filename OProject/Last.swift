@@ -12,7 +12,7 @@ class Last: UIViewController {
 
     @IBOutlet var name: UILabel!
     @IBOutlet var phone: UILabel!
-    @IBOutlet var addressCheck: UILabel!
+    @IBOutlet var address: UILabel!
     @IBOutlet var payCheck: UILabel!
     
     //--- 정보 가져오기
@@ -27,7 +27,7 @@ class Last: UIViewController {
         
         name.text = "이름 : " + lastName
         phone.text = "휴대폰 : " + lastPhone
-        addressCheck.text = "주소 : " + lastAddress
+        address.text = "주소 : " + lastAddress
         payCheck.text = "결제방법 : " + lastPaySeg
     }
 }

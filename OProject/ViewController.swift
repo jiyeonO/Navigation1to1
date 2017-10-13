@@ -11,26 +11,16 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     
-    @IBOutlet var chooseButton: UIButton!
-    @IBOutlet var ItemView: UILabel!
     @IBOutlet var buyButton: UIButton!
     @IBOutlet var chooseView: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        chooseButton.layer.cornerRadius = 10 // 버튼 모서리 둥글게
-        buyButton.layer.cornerRadius = 10
+        buyButton.layer.cornerRadius = 10 // 버튼 모서리 둥글게
     }
     
     //--- Picker 내용 요소
     let chooseArray: Array<String> = ["Regular", "Button Down", "Wide", "Chinese", "Tap"]
-    
-    
-    //--- 선택 버튼 누르면 액션
-    @IBAction func getValue(_ sender: UIButton) {
-        let Item:String = chooseArray[self.chooseView.selectedRow(inComponent: 0)]
-        ItemView.text = Item + "을 선택하셨습니다."
-    }
     
     //--- segue통해 title 지정
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

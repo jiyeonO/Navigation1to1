@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VhT-2w-GNT">
-                                <rect key="frame" x="0.0" y="320" width="375" height="158"/>
+                                <rect key="frame" x="0.0" y="340" width="375" height="188"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96326065059999999" green="0.78100953380000004" blue="0.80776397720000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
@@ -30,46 +30,26 @@
                                     <outlet property="delegate" destination="Am8-di-wRX" id="oxX-D3-qOs"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wer-EG-7mD">
-                                <rect key="frame" x="297" y="385" width="49" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95543241499999998" green="0.71736216549999998" blue="0.7568901777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="선택">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="getValue:" destination="Am8-di-wRX" eventType="touchUpInside" id="1ra-Fe-ykG"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jiyeon's Closet App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIc-j0-lll">
-                                <rect key="frame" x="98" y="51" width="186" height="46"/>
+                                <rect key="frame" x="102" y="57" width="186" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.99956989289999998" green="1" blue="0.94508910180000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="midnight셔츠 - 카라 고르기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSV-Pl-zsx">
-                                <rect key="frame" x="71" y="257" width="249" height="46"/>
+                                <rect key="frame" x="71" y="267" width="249" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" red="0.99956989289999998" green="1" blue="0.94508910180000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sleeve.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="h3y-QL-u0z">
-                                <rect key="frame" x="71" y="105" width="240" height="144"/>
+                                <rect key="frame" x="75" y="111" width="240" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gs6-gG-N17">
-                                <rect key="frame" x="40" y="514" width="302" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99956989289999998" green="1" blue="0.94508910180000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xua-i6-G59">
-                                <rect key="frame" x="165" y="590" width="60" height="38"/>
+                                <rect key="frame" x="157" y="581" width="60" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95543241499999998" green="0.71736216549999998" blue="0.7568901777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -89,15 +69,13 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="ItemView" destination="gs6-gG-N17" id="CWb-dv-Aim"/>
                         <outlet property="buyButton" destination="Xua-i6-G59" id="2eZ-mm-LXF"/>
-                        <outlet property="chooseButton" destination="wer-EG-7mD" id="66H-V1-Nbu"/>
                         <outlet property="chooseView" destination="VhT-2w-GNT" id="dVz-S5-q5s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgd-Mb-hRA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960.79999999999995" y="-640.02998500749629"/>
+            <point key="canvasLocation" x="926" y="-640"/>
         </scene>
         <!--Address Store-->
         <scene sceneID="JI4-fE-D0M">
@@ -119,20 +97,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOO-1p-qkO">
-                                <rect key="frame" x="156" y="533" width="62" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95543241499999998" green="0.71736216549999998" blue="0.7568901777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="확인">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zzF-f4-Nj1" kind="show" identifier="Choose" id="MTV-0u-hl8">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Xt-jc-82j">
                                 <rect key="frame" x="0.0" y="166" width="375" height="218"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -154,14 +118,26 @@
                                     <action selector="getValueAction:" destination="afw-di-jtg" eventType="touchUpInside" id="KiV-4I-hFZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RC-JB-LzP">
-                                <rect key="frame" x="28" y="434" width="319" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="주소를 선택한 뒤 확인을 눌러주세요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RC-JB-LzP">
+                                <rect key="frame" x="28" y="429" width="319" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99956989289999998" green="1" blue="0.94508910180000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOO-1p-qkO">
+                                <rect key="frame" x="156" y="551" width="62" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95543241499999998" green="0.71736216549999998" blue="0.7568901777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="popAction:" destination="afw-di-jtg" eventType="touchUpInside" id="nZR-Vu-Dtq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97538971900000004" green="0.84335839749999997" blue="0.83138406279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -169,12 +145,12 @@
                         <outlet property="checkView" destination="0RC-JB-LzP" id="BST-ll-ayn"/>
                         <outlet property="pickerAddress" destination="0Xt-jc-82j" id="Yy6-vX-L31"/>
                         <outlet property="pickerChoose" destination="CLm-0B-fKE" id="TVt-bL-Slx"/>
-                        <outlet property="yes2Button" destination="bOO-1p-qkO" id="cCB-fX-da1"/>
+                        <outlet property="yesButton" destination="bOO-1p-qkO" id="cQi-sP-iDu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJH-2q-ZwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740" y="-1424"/>
+            <point key="canvasLocation" x="1740" y="-1338"/>
         </scene>
         <!--Choose-->
         <scene sceneID="30d-pS-oUg">
@@ -209,7 +185,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="구매자 정보" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vo-15-WUu">
-                                <rect key="frame" x="5" y="107" width="375" height="36"/>
+                                <rect key="frame" x="0.0" y="107" width="380" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96354830270000003" green="0.78020060059999996" blue="0.80786287779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -233,7 +209,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="결제페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cge-dL-WWA">
-                                <rect key="frame" x="147" y="58" width="91" height="33"/>
+                                <rect key="frame" x="145" y="64" width="91" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.99956989289999998" green="1" blue="0.94508910180000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -278,21 +254,7 @@
                                 </segments>
                                 <color key="tintColor" red="0.96344602109999999" green="0.76849299670000004" blue="0.79217803480000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </segmentedControl>
-                            <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqg-gY-96Q">
-                                <rect key="frame" x="156" y="593" width="62" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95543241499999998" green="0.71736216549999998" blue="0.7568901777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="확인">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="t6b-Yu-6gi" kind="show" identifier="Last" id="9Iy-bY-Aw5">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMb-YD-sJ8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="직접 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kMb-YD-sJ8">
                                 <rect key="frame" x="74" y="404" width="227" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -309,8 +271,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqg-gY-96Q">
+                                <rect key="frame" x="156" y="598" width="62" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95543241499999998" green="0.71736216549999998" blue="0.7568901777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="t6b-Yu-6gi" kind="show" identifier="Last" id="9Iy-bY-Aw5">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.97553998230000005" green="0.83222407099999995" blue="0.8254383206" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97538971900939941" green="0.84335839748382568" blue="0.83138406276702881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="addressTextField" destination="kMb-YD-sJ8" id="FuX-gc-Bvg"/>
@@ -381,10 +357,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.95199966430000005" green="0.83546245100000005" blue="0.82746398450000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.97538971900939941" green="0.84335839748382568" blue="0.83138406276702881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <outlet property="addressCheck" destination="6Ej-AS-Gyj" id="8MU-Ch-dIp"/>
+                        <outlet property="address" destination="6Ej-AS-Gyj" id="Khg-bj-bsf"/>
                         <outlet property="name" destination="6tf-pL-MI8" id="a3b-qe-EkK"/>
                         <outlet property="payCheck" destination="oah-jV-Imj" id="CHS-m9-oHs"/>
                         <outlet property="phone" destination="2pP-hc-2hW" id="h2m-Xs-EeL"/>
@@ -416,7 +392,4 @@
     <resources>
         <image name="sleeve.jpeg" width="225" height="225"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="MTV-0u-hl8"/>
-    </inferredMetricsTieBreakers>
 </document>
